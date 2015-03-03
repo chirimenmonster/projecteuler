@@ -10,7 +10,7 @@ program p_003
   use, intrinsic :: iso_fortran_env
   implicit none
   integer(int64) :: p, q
-  q = 600851475143_8
+  q = 600851475143_int64
   p = 3
   do
      if (p ** 2 > q) exit
