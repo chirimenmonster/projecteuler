@@ -7,7 +7,7 @@
 ! that the 6th prime is 13.
 ! What is the 10001st prime number?
 !
-program p_006
+program p_007
   use, intrinsic :: iso_fortran_env
   implicit none
   integer :: prime(10000), num_prime, n, i
@@ -29,4 +29,4 @@ program p_006
   end do
   write(output_unit, '("")')
   write(output_unit, '("solution: ",g0)') n
-end program p_006
+end program p_007
