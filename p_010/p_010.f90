@@ -6,7 +6,7 @@
 ! The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 ! Find the sum of all the primes below two million.
 !
-program p_009
+program p_010
   use, intrinsic :: iso_fortran_env
   implicit none
   integer(int64) :: i, n, sum
@@ -20,4 +20,4 @@ program p_009
   end do loop
   ! write(output_unit, '("")')
   write(output_unit, '("solution: ",g0)') sum
-end program p_009
+end program p_010
