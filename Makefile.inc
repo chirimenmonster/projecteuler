@@ -1,6 +1,7 @@
 # -*- mode: makefile-gmake -*-
 
 FC = gfortran
+FFLAGS = -Wall
 
 .SUFFIXES: .f90 .mod
 
@@ -13,3 +14,7 @@ FC = gfortran
 
 $(TARGET): $(OBJS)
 	$(LINK.f) $^ $(LOADLIBES) $(LDLIBS) -o $@
+
+.PHONY: clean
+clean:
+	$(RM) $(OBJS)
